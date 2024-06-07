@@ -211,14 +211,14 @@ input {
 
   .menu_images img {
     width: 50vw;
-    height: 260px;
+    height: 50vh;
     object-fit: cover;
   }
 
   .menu_images img:nth-of-type(1) {
     object-fit: cover;
     width: 50vw;
-    height: 100%;
+    height: 50vh;
   }
 
   .menu {
@@ -286,6 +286,8 @@ input {
 
   .how_works {
     flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
   }
 
   .how_works h4 {
@@ -297,7 +299,7 @@ input {
     text-align: center;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.562);
     border-radius: 10px;
-    width: 220px;
+    flex-basis: 270px;
     height: 220px;
 
     padding: 30px;
@@ -305,16 +307,15 @@ input {
 
   .menu {
     flex-direction: row;
-    align-items: flex-start;/*justify-content: space-evenly; */
+    align-items: flex-start;
   }
 
   .menu_images {
-
     justify-content: space-evenly;
   }
 
   .menu_images img {
-    width:250px;
+    flex-basis: 25%;
     height: 260px;
     object-fit: contain;
   }
@@ -322,18 +323,16 @@ input {
   .menu_images img:nth-of-type(1) {
     object-fit: cover;
     height: 260px;
-    width: 250px;
+    flex-basis: 25%;
     border-radius: 10px;
   }
 
   .menu p {
-    width: 250px;
+    flex-basis: 25%;
     height: 260px;
     background-color: rgba(223, 132, 128, 1);
-    justify-self: center;
     align-self: center;
     padding: 50px 30px;
     border-radius: 10px;
   }
-
 }
